@@ -1,0 +1,14 @@
+{
+  "name": "leftyouthmv",
+  "version": "0.0.1",
+  "description": "Projekt",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Chris Determann Jr.",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
