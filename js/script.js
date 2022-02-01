@@ -1,17 +1,15 @@
-/**
- * WEBSITE: https://themefisher.com
- * TWITTER: https://twitter.com/themefisher
- * FACEBOOK: https://www.facebook.com/themefisher
- * GITHUB: https://github.com/themefisher/
- */
+/* 
+	WebdevProjekt
 
-(function ($) {
+**/
+
+(function($) {
     'use strict';
 
 
 
     // Sticky Menu
-    $(window).scroll(function () {
+    $(window).scroll(function() {
         if ($('.navigation').offset().top > 100) {
             $('.navigation').addClass('nav-bg');
         } else {
@@ -20,21 +18,21 @@
     });
 
     // Background-images
-    $('[data-background]').each(function () {
+    $('[data-background]').each(function() {
         $(this).css({
             'background-image': 'url(' + $(this).data('background') + ')'
         });
     });
 
     // background color
-    $('[data-color]').each(function () {
+    $('[data-color]').each(function() {
         $(this).css({
             'background-color': $(this).data('color')
         });
     });
 
     // progress bar
-    $('[data-progress]').each(function () {
+    $('[data-progress]').each(function() {
         $(this).css({
             'bottom': $(this).data('progress')
         });
@@ -42,12 +40,12 @@
 
 
     /* ########################################### hero parallax ############################################## */
-    window.onload = function () {
+    window.onload = function() {
 
         var parallaxBox = document.getElementById('parallax');
         var
-            /* c1left = document.getElementById('l1').offsetLeft,
-                       c1top = document.getElementById('l1').offsetTop, */
+        /* c1left = document.getElementById('l1').offsetLeft,
+                   c1top = document.getElementById('l1').offsetTop, */
             c2left = document.getElementById('l2').offsetLeft,
             c2top = document.getElementById('l2').offsetTop,
             c3left = document.getElementById('l3').offsetLeft,
@@ -65,7 +63,7 @@
             c9left = document.getElementById('l9').offsetLeft,
             c9top = document.getElementById('l9').offsetTop;
 
-        parallaxBox.onmousemove = function (event) {
+        parallaxBox.onmousemove = function(event) {
             event = event || window.event;
             var x = event.clientX - parallaxBox.offsetLeft,
                 y = event.clientY - parallaxBox.offsetTop;
@@ -152,7 +150,7 @@
         buffer: 1
     });
 
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+    jQuery('input[name="shuffle-filter"]').on('change', function(evt) {
         var input = evt.currentTarget;
         if (input.checked) {
             myShuffle.filter(input.value);
